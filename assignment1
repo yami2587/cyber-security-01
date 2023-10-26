@@ -1,0 +1,59 @@
+#assignment1
+class branch:
+    def __init__(self,bn,ifs):
+        self.bname=bn
+        self.ifsc=ifs
+    def branchdetails(self):
+        print('branch name:',self.bname)
+        print ('ifsc',self.ifsc)
+
+
+class account(branch):
+    def __init__(self,ano,cn):
+        self.anum=ano
+        self.cname=cn
+        
+
+#class saving(account):
+    def saving(self,cam):
+        self.mina=10000
+        self.caa=cam
+#class loan(saving):
+    def loan(self,lid,lam):
+        self.loanid=lid
+        self.loana=lam
+
+#class payment(loan):
+    def payment(self,pid,pa):
+        self.paymentid=pid
+        self.paymentam=pa
+    
+class acountdetails(account):
+    def accdetails(self):
+        print ('account num:',self.anum)
+        print('branch name:',self.bname)
+        print ('account num:',self.anum)
+        print ('custmer name',self.cname)
+        print ('****************************************')
+        print('saving account balance:',self.caa)
+        print('*minimum balance limit(maintain above this level ):',self.mina)
+        print ('****************************************')
+        print (' type -- saving account ')
+
+        print ('loan id',self.loanid)
+        print ('loan amount:',self.loana)
+        print ('last emi payment list:-',)
+        print ('payment id:',self.paymentid)
+        print('payment amount:',self.paymentam)
+
+a1=branch('sbi saragaon','sbin00968')
+a2=account(1750005698,'yami yamako')
+a2.saving('23099998')
+a2.loan(780005674,300000)
+a2.payment(4523000897,300000)
+a1.branchdetails()
+a3=acountdetails
+a3.accdetails(self)
+
+    
+        
